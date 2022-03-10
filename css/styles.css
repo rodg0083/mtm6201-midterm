@@ -149,31 +149,68 @@ html {
 	/*Setting the base font size for the website*/
 	font-size: 16px;
 	/*Setting the font family and type*/
-	font-family: 'Open Sans', serif;
+	font-family: 'Open Sans', sans-serif;
 	/*Setting the line spacing for the website text*/
 	line-height: 2.5rem;
+	/*background-color: black;*/
+	background-color: black;
 }
 
 .container {
+	background-color: white;
 	/*margin of 0 on the top and bottom and "automatic" on the left and right*/
 	margin: 0 auto;
 	/*Setting the max and min width of the site*/
-	max-width: 1200px;
-	min-width: 760px;
+	max-width: 760px;
+	min-width: 375px;
 }
 
 h1 {
 	/*setting the font size*/
-	font-size: 5em;
+	font-size: 4em;
 	/*setting the font weight*/
-	font-weight: bolder;
+	font-weight:bolder;
 	/*adding padding*/
 	padding: 8px 0;
 	/*setting the colour of the text*/
 	color: white;
-	padding-top: 50px;
 	/*setting the line height for the h1 welcome message*/
 	line-height: 1.5em;
+	/*Setting the font family and type*/
+	font-family: 'Playfair Display', serif;
+}
+
+h2 {
+	/* setting the font for h2 to bold*/
+	font-weight:bolder;
+	/*setting the font size*/
+	font-size: 3em;
+	/*adding padding*/
+	padding: 10px;
+	/*adding margins to the top*/
+	margin-top: 30px;
+	/*setting the header in the center of the page*/
+	text-align: center;
+	/*Setting the font family and type*/
+	font-family: 'Gabriela', serif;
+}
+
+h3 {
+	/*setting the font weight*/
+	font-weight: bolder;
+	/* setting the font size*/
+	font-size: 2em;
+	/*adding margins to th top and bottom*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/*aligning the text in the center of the container*/
+	text-align: center;
+	/*Setting the font family and type*/
+	font-family: 'Gabriela', serif;
+}
+
+.menucheck {
+	display: none;
 }
 
 nav {
@@ -181,6 +218,9 @@ nav {
 	background-color: #222;
 	/*adding padding*/
 	padding: 10px;
+	/*Setting the font family and type*/
+	font-family: 'Playfair Display', serif;
+	font-size: 1.3rem;
 }
 
 ul {
@@ -202,58 +242,72 @@ li a {
 	/*adding padding*/
 	padding: 1em;
 	/* setting the colour of the nav text */
-	color: #c78c06;
+	color: white;
 }
 
-.navtop {
-	/*setting the background colour of home*/
-	background-color: #c78c06;
-	/* setting the colour of home */
-	color: #222;
+nav a:hover{
+	background-color: #470550;
 }
 
-.menucheck {
-	/*setting the background colour*/
-	background-color: #c78c06;
-	/*adding padding*/
-	padding-bottom: 30px;
+nav a:active{
+	background-color: #C481DA;
+	animation-name: anim2;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
 }
 
+form.search-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 form.search-container input[type=text] {
 	/*adding padding*/
-	padding: 10px;
-	/* setting the font size for the search container*/
-	font-size: 17px;
+	padding: 15px;
 	/* adding a border*/
 	border: 1px solid gray;
-	/* float the searchbar to the left*/
-	float: left;
-	/* setting the width of the searchbar*/
-	width: 94%;
 	/* setting the background*/
 	background: white;
+
+	position: relative;
+	border-radius: 25px;
+	display: flex;
+	width: 100%;
 }
 
 form.search-container button {
-	/*float the search button to the left next to the searchbar*/
-	float: left;
-	/*adding padding*/
-	padding: 10px;
-	/* setting the background colour*/
-	background: #222;
+background-color: #470550;
+width: 50px;
+height:50px;
+border-radius: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
 	/* setting the colour of the icon gold*/
-	color: #c78c06;
-	/* setting the font size*/
-	font-size: 17px;
-	/* adding a border*/
-	border: 1px solid #c78c06;
-	/* removing the left boarder*/
-	border-left: none;
+	color: white;
 	/* changing the cursor into a pointer when cursor hovers over the button*/
 	cursor: pointer;
-	/*adding margins to the top*/
-	margin-top: 5px;
 }
+
+form.search-container button:hover {
+	animation-name: anim1;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate; 
+}
+
+form.search-container button:active {
+	animation-name: anim2;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+}
+
+.icon-zoom {
+		font-size: 1.5rem;
+	}
 
 form.search-container::after {
 	/*Clearing the floats after the columns */
@@ -262,168 +316,119 @@ form.search-container::after {
 	display: table;
 }
 
-h2 {
-	/* setting the font for h2 to bold*/
-	font-weight: bold;
-	/*setting the font size*/
-	font-size: 3em;
-	/*adding padding*/
-	padding: 10px;
-	/*adding margins to the top*/
-	margin-top: 30px;
-}
-
-h3 {
-	/*setting the font weight*/
-	font-weight: bolder;
-	/* setting the font size*/
-	font-size: 2em;
-	/*adding margins to th top and bottom*/
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-h4 {
-	/*setting the font weight*/
-	font-weight: bolder;
-	/* adding a border to the bottom of the text*/
-	border-bottom: 2px solid #c78c06;
-	/*adding margins to the bottom*/
-	margin-bottom: 10px;
-}
-
-.main1 {
-	/*set the position to relative*/
-	position: relative;
-}
-
-.bannerbox {
-	/* setting the background colour of the bannerbox container*/
-	background-color: #ffe6ac;
-}
-
-.welcome-message {
-	/*setting the position to absolute*/
-	position: absolute;
-	/*changing the position near the top*/       
-	/* setting the background colour to rgb to add the opacity directly to the colour*/
- margin: 80px;
-	/* setting the colour of the text*/
-	color: white;
-	/*adding padding*/
-	padding: 15px;
-    width: 50%;
-    height: 100%;
-    background-color: purple;
-    clip-path: polygon(0% 0%,41% 0%,100% 0%,65% 100%,0% 100%);
-}
-
-.connectbutton {
-	/*adding padding*/
-	padding: 20px;
-	/*setting the background colour*/
-	background: #c78c06;
-	/* setting the colour of the text*/
-	color: #222;
-	/* adding a border*/
-	border: 2px solid #c78c06;
-	/*adding margins to the top*/
-	margin-top: 10px;
-	/* changing the font size for the button*/
-	font-size: 18px;
-}
-
-.planbuttons {
-	/*adding padding*/
-	padding: 20px;
-	/*setting the background colour*/
-	background: #222;
-	/*setting the text colour*/
-	color: white;
-	/*adding a border*/
-	border: 2px solid #222;
-	/*adding margins to the top*/
-	/*adding margins to the top*/
-	margin-top: 10px;
-	/*changing the font size for the button*/
-	font-size: 18px;
-}
-
-#vision {
-	/*setting the position to relative*/
-	position: relative;
-	/*setting the height of the vision container to 250px*/
-	height: 250px;
-}
-
-.visionbox {
-	/*setting the position to relative*/
-	position: absolute;
-	/*setting the position to the top of the container*/
-	top: 0;
-	/*setting the height of the image*/
-	height: 100%;
-	/* set the width to be the width of the browser window */
-	width: 100%;
-	/* set a negative z-index (or layer) to put this behind your content */
-	z-index: -1;
-	/*background image;*/
-	background-image: url("../images/vision.jpg");
-	/*changing the background position and background size to make sure the image always covers the div and doesn't repeat*/
-	background-position: center center;
+.main{
+	background-image: url(../images/banner.jpg);
+	background-position: bottom center;
 	background-size: cover;
+	background-repeat: no-repeat;
+	height: 1000px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.banner {
+	background-color: #00000099;
+	height: 1000px;
 }
 
-.visiontext {
-	/*setting the max-width of the text container*/
-	padding: 15px;
-	/*setting the colour of the text*/
+.overlay {
 	color: white;
+	padding: 60px;
+	text-align: center;
 }
 
-.visionbutton {
+q{
+	/*setting the font size*/
+	font-size: 2rem;
+	/*setting the font weight*/
+	font-weight:500;
+	/*setting the font style*/
+	font-style: italic;
+	/*setting the line height for the h1 welcome message*/
+	line-height: 1.8em;
+	/*Setting the font family and type*/
+	font-family: 'Playfair Display', serif;	
+}
+
+.orderbutton{
+	color: white;
+	font-size: 1.5rem;
+	background-color: #6f0c7c;
+	height:50px;
+	width: 200px;
+	border-radius: 50px;
+	margin-top: 30px;
+	/* changing the cursor into a pointer when cursor hovers over the button*/
+	cursor: pointer;
+	border: 2px solid white;
+}
+
+.orderbutton:hover{
+	animation-name: anim1;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate; 
+}
+
+.orderbutton:active{
+	animation-name: anim2;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+}
+
+.learnmore{
+	color: white;
+	font-size: 1.2rem;
+	background-color: #6f0c7c;
+	height:50px;
+	width: 180px;
+	border-radius: 50px;
+	margin-top: 30px;
+	/* changing the cursor into a pointer when cursor hovers over the button*/
+	cursor: pointer;
+	border: 2px solid white;
+}
+
+.learnmore:hover{
+	animation-name: anim1;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate; 
+}
+
+.learnmore:active{
+	animation-name: anim2;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+}
+.text2{
+	text-align: left;
+	/*adding padding*/
+	padding: 60px;
+}
+
+.text2 p{
+	text-align: center;
+}
+
+img{
+	width: 100%;
+	text-align: center;
+}
+
+.footer1 {
+	/*Setting the text and background colour */
+	background: #222;
+	color: white;
+	/* changing line height of the footer*/
+	line-height: 2;
 	/*adding padding*/
 	padding: 20px;
-	/*setting the background colour to add opacity*/
-	background: rgb(34, 34, 34, 0.6);
-	/*setting the colour of the text*/
-	color: white;
-	/*adding a border */
-	border: 2px solid #c78c06;
-	/*adding margins to the top*/
-	margin-top: 10px;
-	/*setting the font size of the button*/
-	font-size: 18px;
-}
-
-.sendbutton {
-	/*setting the font size of the button*/
-	font-size: 18px;
-	/*adding padding*/
-	padding: 4px;
-	/*setting the background colour*/
-	background: #222;
-	/*setting the colour of the text*/
-	color: #c78c06;
-	/*adding a black border*/
-	border: 2px solid #222;
-}
-
-input[type=text],
-select,
-textarea {
-	/* Full width of the browser*/
-	width: 100%;
-	/*adding padding*/
-	padding: 3px;
-	/* Makes sure that the padding and width stays in place*/
-	box-sizing: border-box;
-	/* Margin at the top*/
-	margin-top: 6px;
-	/* Margin at the bottom*/
-	margin-bottom: 16px;
-	/* Allow the user to vertically resize the textarea only*/
-	resize: vertical;
 }
 
 table {
@@ -436,7 +441,7 @@ th,
 tr,
 td {
 	/*adding borders to the hours table*/
-	border: 1px solid #222;
+	border: 1px solid white;
 }
 
 th,
@@ -447,7 +452,7 @@ td {
 
 th {
 	/*setting the background colour*/
-	background: #ffe6ac;
+	background: black;
 	/*centering the text*/
 	text-align: center;
 }
@@ -457,410 +462,245 @@ td {
 	padding-left: 20px;
 }
 
-.aboutbox {
-	/*setting the background colour*/
-	background: #ffe6ac;
-	/*adding padding*/
-	padding: 15px;
+.social{
+	text-align: center;
 }
 
-.abouttitle {
-	/*setting the font size of the title*/
-	font-size: 3em;
-	/*setting the font weight of the title*/
-	font-weight: bolder;
-}
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+  }
+  
+  .fa:hover {
+	  opacity: 0.7;
+  }
+  
+  .fa:active{
+	animation-name: anim2;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+  }
 
-.digitalbox,
-.marketingbox,
-.videobox,
-.webbox,
-.printbox,
-.team1,
-.team2 {
-	/*adding light yellow background colour and margins to the content boxes*/
-	background: #ffe6ac;
-	/*Setting the margins*/
-	margin: 15px;
-}
+  .fa-facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  .fa-twitter {
+	background: #55ACEE;
+	color: white;
+  }
+  
+  .fa-google {
+	background: #dd4b39;
+	color: white;
+  }
+  
+  .fa-instagram {
+	background: #125688;
+	color: white;
+  }
 
-.about-us p {
-	/*adding padding*/
-	padding-bottom: 15px;
-}
-
-.texts,
-.teamtext {
-	/*adding padding*/
-	padding: 15px;
-	/*setting the line height of the texts*/
-	line-height: 1.5rem;
-}
-
-.image-logo {
-	/*setting the sidth of the logo*/
-	width: 100px;
-	/*setting the height to automatic*/
-	height: auto;
-}
-
-img {
-	/*Making the images fit the width of their containers*/
-	width: 100%;
-	/*set the height to adjust of the dimentions of the width*/
-	height: auto;
-	/*making the image cover the container*/
-	object-fit: cover;
-}
-
-.contact-page,
-.hours,
-.location {
-	/*adding padding*/
-	padding: 15px;
-}
-
-iframe {
+  iframe {
 	/*Making the map fit the width of it's container*/
 	width: 100%;
+	height: 500px;
+  }
+
+address{
+	font-size: 1.5rem;
+	text-align: center;
+	border: 2px solid white;
 }
 
-.contact-us {
-	/*adding padding on the bottom*/
-	padding-bottom: 0;
-}
-
-footer {
-	/*Setting the text and background colour */
-	background: #222;
-	color: #c78c06;
-	/* changing line height of the footer*/
-	line-height: 2;
+footer{
 	/*adding padding*/
-	padding: 20px;
+	padding: 30px 20px;
+	background: #222;
+	color: white;
+	border-top: 2px solid black;
 }
-
 
 /*___________________________________________________________________________________________
                                     Desktop Styling
 _____________________________________________________________________________________________*/
 
-.clip{
-    width: 200px;
-    height: 200px;
-    background-color: purple;
-    clip-path: polygon(0% 0%,41% 0%,100% 0%,65% 100%,0% 100%);
-}
-
-
-
-
 @media screen and (min-width:760px) {
-	nav {
-		/*reset the padding on the nav*/
-		position: relative;
-		/*Resetting the padding*/
+	.container {
+		/*Setting the max and min width of the site*/
+		max-width: 1280px;
+		min-width: 760px;
+	}
+
+	h1 {
+		/*setting the font size*/
+		font-size: 4em;
+	}
+	
+	h2 {
+		/*setting the font size*/
+		font-size: 3.5em;
+	}
+	
+	h3 {
+		/*setting the font size*/
+		font-size: 2.5em;
 		padding: 0;
 	}
-	.backnav {
-		/*setting the position to relative*/
-		position: absolute;
-		/*setting the position to the top of the container*/
-		top: 0;
-		/*setting the height of the image*/
-		height: 100%;
-		/* used right and left to position this element in the center of its container */
-		left: 50%;
-		right: 50%;
-		/* adding margins to the left right and bottom*/
-		margin-left: -50vw;
-		margin-right: -50vw;
-		/* set the width to be the width of the browser window */
-		width: 100vw;
-		/*setting the background colour of the nav*/
-		background-color: #222;
-		/* set a negative z-index (or layer) to put this behind your content */
-		z-index: -1;
-	}
-	li a {
-		/*float the nav list to the left*/
-		float: left;
-		/*removing the text decorations*/
-		text-decoration: none;
-		/*adding padding*/
-		padding: 1em 2.5rem;
-		/* adding margins at the top */
-		margin-top: 45px;
-	}
+
 	.menucheck {
+		display: block;
 		/*float the container to the left*/
 		float: left;
 		/*setting the background colour*/
 		background-color: #222;
-		/*adding padding*/
-		padding: 20px 50px;
 		/* adding margins */
 		margin: 10px;
+		width: 100px;
 	}
+
+	nav{
+		/*Navigation is positioned at the top of the page*/
+		top: 0;
+		/*Font size is increased for the navigation*/
+		font-size: 1.5rem;
+		/*Overflow of content is hidden*/
+		overflow: hidden;
+		line-height: 1.8em;
+	}
+
+	nav a {
+		float: left;
+		/*Places the navigation on the left*/
+		padding: 10px;
+		/*initial padding all around the navigation*/
+		text-decoration: none;
+		/*Removes the lines at the bottom of the text*/
+	}
+
+	nav a:last-child {
+		border-right: none;
+		/*Removing the right-most black bar on the navigation*/
+	}
+
+	li a {
+		/*float the nav list to the left*/
+		float: left;
+		/*adding padding*/
+		padding: 1em 0.7rem;
+	}
+
 	form.search-container input[type=text] {
 		/*shortening the width of the searchbar*/
-		width: 15.4%;
-		/* adding margins to the top*/
-		margin-top: 50px;
+		width: 50%;
+		padding: 1em 2.5rem;
+		margin-top: 20px;
 	}
+
 	form.search-container button {
 		/* adding margins to the top*/
-		margin-top: 50px;
+		margin-top: 20px;
 	}
-	.welcome-message {
-		/*setting the position of the welcome message*/
-		position: absolute;
-		top: 5%;
-		left: 8%;
-		right: 8%;
+
+	.main{
+		height: fit-content;
 	}
-	.bannerbox {
-		/*setting the height of the container*/
-		height: 510px;
-		/*removing the background colour*/
-		background: none;
-	}
-	.mainimage {
-		/*setting the position to absolute*/
-		position: absolute;
-		/*setting the image to the top of the container*/
-		top: 0;
-		/*setting the height of the image*/
-		height: 100%;
-		/* used right and left to position this element in the center of its container */
-		left: 50%;
-		right: 50%;
-		/* adding margins to the left right and bottom*/
-		margin-left: -50vw;
-		margin-right: -50vw;
-		/* set the width to be the width of the browser window */
-		width: 100vw;
-		/* set a negative z-index (or layer) to put this behind your content */
-		z-index: -1;
-	}
-	.aboutbox {
-		/*using flex to set the container*/
-		display: flex;
-		/*Setting the position to relative*/
-		position: relative;
-	}
-	.backabout {
-		/*setting the position to relative*/
-		position: absolute;
-		/*setting the position to the top of the container*/
-		top: 0;
-		/*setting the height of the image*/
-		height: 100%;
-		/* used right and left to position this element in the center of its container */
-		left: 50%;
-		right: 50%;
-		/* adding margins to the left right and bottom*/
-		margin-left: -50vw;
-		margin-right: -50vw;
-		/* set the width to be the width of the browser window */
-		width: 100vw;
-		/*Resetting the padding*/
-		padding: 0;
-		/* set a negative z-index (or layer) to put this behind your content */
-		z-index: -1;
-		/*setting the background colour*/
-		background-color: #ffe6ac;
-	}
-	.about-us {
-		/*setting the position to relative*/
-		position: relative;
-		/*changing the direction of about us container - reversing the image and text*/
-		flex-direction: row-reverse;
-		/*adding padding left and right*/
-		padding-left: 30px;
-		padding-right: 60px;
-	}
-	.aboutimage {
-		/*setting the height of the image to 250px*/
-		height: 250px;
-		/*setting the width to ajust the dimensions to match the height*/
-		width: auto;
-		/*adding padding to the left*/
-		padding-left: 60px;
-	}
-	.abouttitle {
-		/*resetting the top margin*/
-		margin-top: 0px;
-	}
-	h2 {
-		/*adding padding*/
-		padding-left: 60px;
-	}
-	.services {
-		/*setting the display of the container to grid*/
+
+	.banner{
 		display: grid;
-		/*adding 6 columns to the grid*/
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-		/*adding 2 rows that changes to fit the height of the content*/
-		grid-template-rows: auto auto;
-		/*adding padding*/
-		padding: 0 50px 0 50px;
+		grid-template-columns: 3fr 2fr;
+		grid-auto-rows: auto;
+		height: fit-content;
 	}
-	.digitalbox {
-		/*the item spans for 3 columns*/
-		grid-column: 1 / span 3;
-		/*the item is placed on the 1st row*/
-		grid-row: 1;
-		/* adding margins to the bottom and right*/
-		margin-bottom: calc(15px - 9px);
-		margin-right: calc(15px - 9px);
-	}
-	.marketingbox {
-		/*the item starts on the 4th column and spans for 3 columns*/
-		grid-column: 4/ span 3;
-		/*the item is placed on the 1st row*/
-		grid-row: 1;
-		/* adding margins to the bottom and right*/
-		margin-bottom: calc(15px - 9px);
-		margin-left: calc(15px - 9px);
-	}
-	.videobox {
-		/*the item starts on the 1st column and spans for 2 columns*/
-		grid-column: 1 /span 2;
-		/*the item is placed on the 2nd row*/
-		grid-row: 2;
-		/* adding margins to the bottom and right*/
-		margin-top: calc(15px - 9px);
-		margin-right: calc(15px - 9px);
-	}
-	.webbox {
-		/*the item starts on the 3rd column and spans for 2 columns*/
-		grid-column: 3 / span 2;
-		/*the item is placed on the 2nd row*/
-		grid-row: 2;
-		/* adding margins to the top, bottom and right*/
-		margin-top: calc(15px - 9px);
-		margin-right: calc(15px - 9px);
-		margin-left: calc(15px - 9px);
-	}
-	.printbox {
-		/*the item starts on the 5th column and spans for 2 columns*/
-		grid-column: 5 /span 2;
-		/*the item is placed on the 2nd row*/
-		grid-row: 2;
-		/* adding margins to the bottom and right*/
-		margin-top: calc(15px - 9px);
-		margin-left: calc(15px - 9px);
-	}
-	.planbuttons {
-		/*setting the width of the button to the size of the container*/
-		width: 100%;
-		/*setting the height of the buttons*/
-		height: 10vh;
-		/*setting the font size of button text*/
-		font-size: 20px;
-	}
-	.visionbox {
-		/*Setting the width units to vw*/
-		width: 100vw;
-		/* used right and left to position this element in the center of its container*/
-		left: 50%;
-		right: 50%;
-		/* adding margins to the left right and bottom*/
-		margin-left: -50vw;
-		margin-right: -50vw;
-	}
-	.team1 {
-		/*setting the display of the container to flex*/
-		display: flex;
-		/*adding margins */
-		margin: 10px 60px 0 60px;
-	}
-	.team2 {
-		/**setting the display of the container to flex*/
-		display: flex;
-		/*reversing the row direction*/
-		flex-direction: row-reverse;
-		/* adding margins*/
-		margin: 0 60px;
-	}
-	.john,
-	.bob {
-		/*setting the width of the team images*/
-		width: 50%;
-	}
-	#contact {
-		/*setting the display to grid*/
-		display: grid;
-		/*adding 2 columns*/
-		grid-template-columns: 1fr 1fr;
-		/*adding 2 rows that changes to fit the height of the content*/
-		grid-template-rows: auto auto auto;
-		/* adding margins */
-		margin: 0 50px;
-	}
-	.contact-us {
-		/*the item starts on the 1st column and spans for 2 columns*/
-		grid-column: 1 / span 2;
-		/*the item is placed on the 1st row*/
-		grid-row: 1;
-		/*adding padding to the left*/
-		padding-left: 10px;
-	}
-	.contact-page {
-		/*the item placed on the 1st column*/
-		grid-column: 1;
-		/*the item is placed on the 2nd row*/
-		grid-row: 2;
-	}
-	.hours {
-		/*the item starts on the 1st column and spans for 2 columns*/
-		grid-column: 1 / span 2;
-		/*the item is placed on the 3rd row*/
-		grid-row: 3;
-	}
-	.location {
-		/*the item is placed on the second column*/
+
+	.logotop{
 		grid-column: 2;
-		/*the item is placed on the 2ns row*/
+		grid-row: 1;
+		width: 100%;
+		margin: auto;
+	}
+
+	.overlay{
+		text-align: left;
+		padding-left:60px;
+		padding-right: 0;
+		margin: 0;
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.orderbutton{
+		margin-bottom: 80px;
+	}
+
+	#description{
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	#service{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.genimg1{
+		object-fit: fill;
+		width: 500%;
+	}
+
+	.genimg2{
+		object-fit: fill;
+		width: 500%;
+	}
+
+	.footer1 {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		justify-content:center;
+		column-gap: 40px;
+		padding: 30 0;
+		margin: 0;
+	}
+	
+	.social{
+		grid-column: 1;
 		grid-row: 2;
 	}
-	#message {
-		/*setting the height to 30px*/
-		height: 30px;
+	
+	.hours {
+		grid-column: 1;
+		grid-row: 1;
 	}
-	.visionbutton {
-		/*Adding padding and making the font larger*/
-		padding: 30px 40px;
-		/*setting the font size of the button*/
-		font-size: 20px;
+
+	.location{
+		grid-column: 2;
+		grid-row: 1 / span 2;
 	}
-	.backfooter {
-		/*setting the position to absolute*/
-		position: absolute;
-		/*setting the height of the image*/
-		height: 100%;
-		/* used right and left to position this element in the center of its container */
-		left: 50%;
-		right: 50%;
-		/* adding margins to the left right and bottom*/
-		margin-left: -50vw;
-		margin-right: -50vw;
-		/* set the width to be the width of the browser window */
-		width: 100vw;
-		/*setting the background colour of the nav*/
-		background-color: #222;
-		/* set a negative z-index (or layer) to put this behind your content */
-		z-index: -1;
-	}
-	.footertext {
-		/*Adding padding to the text*/
-		padding: 20px;
-	}
-	footer {
-		/*setting the position to relative*/
-		position: relative;
-		/*resetting the padding*/
-		padding: 0;
-	}
+}
+
+/*___________________________________________________________________________________________
+                                    Animations
+_____________________________________________________________________________________________*/
+
+@keyframes anim1{
+	0% {background-color: #470550;}
+	100% {background: #C481DA;
+		transform: scale(1.25); }
+		
+}
+
+@keyframes anim2{
+	50%{transform: scale(1.5);}
+	100%{transform: scale(0.2);}
 }
