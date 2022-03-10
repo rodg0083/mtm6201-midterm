@@ -8,24 +8,133 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Open+Sans:wght@500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- add icon stylesheet file for used icons -->
     <link href="CSS/icons.css" rel="stylesheet">    
     <!-- add css stylesheet -->
     <link href="css/styles2.css" rel="stylesheet">
 </head>
 <body>
-    
-<!-- added copyright-->
-<footer>
-    <div class="backfooter">
+<div class="container">
+        <!-- Navigation -->
+        <nav>
+          <div class="backnav"></div>
+          <!-- add divs to place the content into containers -->
+          <div class="menucheck">
+            <img src="images/logo.png" alt="Logo of the Bun Boutique Bakery" width="50">
+          </div>   
+          <ul>
+              <!-- added seperate container for home to change in css -->
+              <li><a href="index.html">HOME </a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contactform.html">CONTACT</a></li>
+              <li><a href="#">ORDER ONLINE</a></li>
+              <!-- add search bar and seach button with magnify glass icon -->
+              <li>    
+                  <form class="search-container" action="index.html" method="post" >
+                    <input class="searchbar" type="text" placeholder="Search" name="search"> 
+                    <button type="submit" name="search"><i class="icon icon-zoom"></i></button>
+                  </form>
+              </li>
+          </ul>
+      </nav>
+<!-- Header -->
+    <header id="banner">
+        <h1>About Us</h1>
+    </header>
+    <main>
+    <div id="about">
+    <!-- added images in a box with text -->
+            <div class="text">
+                <h2>Meet the baker</h2>  
+                <h3>Jennifer Johnson</h3>
+                <h4>Baker and Owner</h4>
+
+              <div class="text2">
+                <!-- added a seperate container just for the text and button in the general container for the content of this segment -->
+            <span class="">Jennifer Johnson started her new baking career out of her home in 2018. She began catering to friends and family and soon when on to participating in craft sales and community events. Through word of mouth, her business, the Bun Boutique Bakery, became more popular and is now catering for events such as birthdays and weddings.</span>
+          </div>
+          </div>
+        <div class="profilepic">
+                    <!-- digital image -->
+                    <picture> 
+                      <source srcset="images/jennifer_320.jpg, 
+                                      images/jennifer_540.jpg 2x,  
+                                      images/jennifer_760.jpg 3x" 
+                              media="(max-width: 760px)" 
+                              alt="Picture of various pastries">
+          
+                      <source srcset="images/jennifer_760.jpg, 
+                                      images/jennifer_960.jpg 2x,  
+                                      images/jennifer_1280.jpg 3x" 
+                      media="(min-width: 761px)" 
+                      alt="Picture of various pastries">
+          
+                      <source srcset="images/jennifer_1280.jpg, 
+                                      images/jennifer_1600.jpg 2x,  
+                                      images/jennifer_3840.jpg 3x" 
+                              media="(min-width: 960px)" 
+                              alt="Picture of various pastries">
+                    </picture>
+        
+                <img src="images/jennifer_original.jpg" alt="Picture of the baker Jennifer Johnson" width="350">
+          </div>
+        </div>
+    </main>
+
+
+  
+    <div class="backfooter"></div>
+    <div class="footer1">
+<!-- Add social media icons -->
+<div class="social">
+  <h3>Connect with us</h3> 
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-google"></a>
+</div>
+
+    <div class="hours">
+            <table>
+                <caption><h3>Hours of operation</h3></caption>
+                <thead>
+                  <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Monday - Friday</td>
+                    <td>9 AM - 6 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday - Sunday</td>
+                    <td>Closed</td>
+                  </tr>
+                </tbody>
+              </table>
     </div>
-    <div class="footertext">
+    <div class="location">
+       <h3>Location</h3> 
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518045395!2d-75.75712548419932!3d45.3499315490813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1637855127682!5m2!1sen!2sca" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <address>
+        Visit us at: BunBakeryBoutique.com<br>
+        Phone: 1-888-286-2253 or 1-888-BUN-BAKE
+    </address>
+    </div>
+  </div>
+
+    <footer>
+    <!-- added copyright-->
+    <div class="copyrighttext">
         <p><strong><small>&copy; Copyright Victoria Rodgers 2021. All Rights Reserved</small>.</strong></p>
         <p><small><sup>*</sup>Note: This webpage was created within the bounds of the course MTM6130_020 at Algonquin College.</small></p>
         </div>
     </footer>
-</div>
 </body>
 </html>
 <!-- End of code-->   
