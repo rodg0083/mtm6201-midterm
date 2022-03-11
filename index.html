@@ -1,192 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bun Boutique Bakery About</title>
+    <title>Bun Boutique Bakery About
+    </title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- added links to the google font stylesheets-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Open+Sans:wght@500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- add icon stylesheet file for used icons -->
     <link href="CSS/icons.css" rel="stylesheet">    
     <!-- add css stylesheet -->
     <link href="css/styles.css" rel="stylesheet">
-</head>
-<body>
-<div class="container">
-        <!-- Navigation -->
-        <nav>
-            <div class="backnav"></div>
-            <!-- add divs to place the content into containers -->
-            <div class="menucheck">
-              <img src="images/logo.png" alt="Logo of the Bun Boutique Bakery" width="50">
-            </div>   
-            <ul>
-                <!-- added seperate container for home to change in css -->
-                <li><a href="index.html">HOME </a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contactform.html">CONTACT</a></li>
-                <li><a href="#">ORDER ONLINE</a></li>
-                <!-- add search bar and seach button with magnify glass icon -->
-                <li>    
-                    <form class="search-container" action="index.html" method="post" >
-                      <input class="searchbar" type="text" placeholder="Search" name="search"> 
-                      <button type="submit" name="search"><i class="icon icon-zoom"></i></button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
-<!-- Header -->
-<header>
-    <div class="main">
-<!-- added multiple divs to put the welcome message over the background image -->
-        <div class="banner">
-          <div class="logotop">
-                    <!-- digital image -->
-                    <img src="images/logo.png" alt="Picture of various pastries" width="350"> 
-                  </div>
-
-                <div class="overlay">
-                    <div class="topbanner"></div>
-                <h1>Welcome to the Bun Boutique Bakery</h1>
-                <span><q>"A flavour for every mood!"</q></span>
-            <!-- added a black arrow icon to the button-->    
-                <p><input class="orderbutton" type="submit" name="order_online" id="order" value="Order Online &#9654;"></p>        
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navigation -->
+      <nav>
+        <div class="backnav">
+        </div>
+        <!-- add divs to place the content into containers -->
+        <div class="menucheck">
+          <img src="images/logo.png" alt="Logo of the Bun Boutique Bakery" width="50">
+        </div>   
+        <ul>
+          <!-- added seperate container for home to change in css -->
+          <li>
+            <a href="index.html">HOME 
+            </a>
+          </li>
+          <li>
+            <a href="about.html">ABOUT
+            </a>
+          </li>
+          <li>
+            <a href="contactform.html">CONTACT
+            </a>
+          </li>
+          <li>
+            <a href="#">ORDER ONLINE
+            </a>
+          </li>
+          <!-- add search bar and seach button with magnify glass icon -->
+          <li>    
+            <form class="search-container" action="index.html" method="post" >
+              <input class="searchbar" type="text" placeholder="Search" name="search"> 
+              <button type="submit" name="search">
+                <i class="icon icon-zoom">
+                </i>
+              </button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+      <!-- Header -->
+      <header>
+        <div class="main">
+          <!-- added multiple divs to put the welcome message over the background image -->
+          <div class="banner">
+            <div class="logotop">
+              <!-- digital image -->
+              <img src="images/logo.png" alt="Picture of various pastries" width="350"> 
+            </div>
+            <!-- Main banner-->
+            <div class="overlay">
+              <div class="topbanner">
+              </div>
+              <h1>Welcome to the Bun Boutique Bakery
+              </h1>
+              <span>
+                <q>"A flavour for every mood!"
+                </q>
+              </span>
+              <!-- added a black arrow icon to the button-->    
+              <p>
+                <input class="orderbutton" type="submit" name="order_online" id="order" value="Order Online &#9654;">
+              </p>        
             </div> 
-
-        </div>
-    </div>
-    </header>
-
-    <main>
-    <div id="description">
-    <!-- added images in a box with text -->
-            <div class="text">
-                <h2>Who we are</h2>  
-              <div class="text2">
-                <!-- added a seperate container just for the text and button in the general container for the content of this segment -->
-            <span class="descriptionbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus rhoncus dui eu convallis. Vivamus consectetur aliquam nunc, nec venenatis libero feugiat quis. Aenean dolor odio, consequat in ornare a, viverra ac diam. Maecenas justo orci, tincidunt vitae porta nec, ullamcorper quis nulla. Curabitur ultricies ligula justo, vitae tincidunt massa fermentum eget. Vivamus porttitor placerat nunc accumsan porta. Suspendisse tempus elit sed nulla vehicula sollicitudin. Curabitur laoreet a nunc sed gravida. Nunc id lorem vitae nulla interdum sodales vitae quis orci. Aenean tincidunt neque eu sapien porta, congue laoreet diam volutpat.</span>
-            <p><input class="learnmore" type="submit" name="connect" id="learn1" value="Learn More &#9654;"></p>     
-        </div>
-          </div>
-        <div class="genimg1">
-          <!-- digital image -->
-          <picture> 
-            <source srcset="images/buns_320.jpg, 
-                            images/buns_540.jpg 2x,  
-                            images/buns_760.jpg 3x" 
-                    media="(max-width: 760px)">
-
-            <source srcset="images/buns_760.jpg, 
-                            images/buns_960.jpg 2x,  
-                            images/buns_1280.jpg 3x" 
-            media="(min-width: 761px)" >
-
-            <source srcset="images/buns_1280.jpg, 
-                            images/buns_1600.jpg 2x,  
-                            images/buns_3840.jpg 3x" 
-                    media="(min-width: 960px)">
-
-                <img src="images/buns_original.jpg" alt="Picture of various freshly baked twisted buns"> 
-          </picture>
-
-         
-
           </div>
         </div>
-
+      </header>
+      <main>
+        <div id="description">
+          <!-- added images in a box with text -->
+          <div class="text">
+            <h2>Who we are
+            </h2>  
+            <div class="text2">
+              <!-- added a seperate container just for the text and button in the general container for the content of this segment -->
+              <span class="descriptionbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus rhoncus dui eu convallis. Vivamus consectetur aliquam nunc, nec venenatis libero feugiat quis. Aenean dolor odio, consequat in ornare a, viverra ac diam. Maecenas justo orci, tincidunt vitae porta nec, ullamcorper quis nulla. Curabitur ultricies ligula justo, vitae tincidunt massa fermentum eget. Vivamus porttitor placerat nunc accumsan porta. Suspendisse tempus elit sed nulla vehicula sollicitudin. Curabitur laoreet a nunc sed gravida. Nunc id lorem vitae nulla interdum sodales vitae quis orci. Aenean tincidunt neque eu sapien porta, congue laoreet diam volutpat.
+              </span>
+              <p>
+                <input class="learnmore" type="submit" name="connect" id="learn1" value="Learn More &#9654;">
+              </p>     
+            </div>
+          </div>
+          <div class="genimg1">
+            <!-- digital image -->
+            <picture> 
+              <source srcset="images/buns_320.jpg, 
+                              images/buns_540.jpg 2x,  
+                              images/buns_760.jpg 3x" 
+                      media="(max-width: 760px)">
+              <source srcset="images/buns_760.jpg, 
+                              images/buns_960.jpg 2x,  
+                              images/buns_1280.jpg 3x" 
+                      media="(min-width: 761px)" >
+              <source srcset="images/buns_1280.jpg, 
+                              images/buns_1600.jpg 2x,  
+                              images/buns_3840.jpg 3x" 
+                      media="(min-width: 960px)">
+              <img src="images/buns_original.jpg" alt="Picture of various freshly baked twisted buns"> 
+            </picture>
+          </div>
+        </div>
         <div id="service">
-            <!-- added images in a box with text -->
-                    <div class="text3">
-                        <h2>What we offer</h2>  
-                      <div class="text2">
-                        <!-- added a seperate container just for the text and button in the general container for the content of this segment -->
-                    <span class="servicebox">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus rhoncus dui eu convallis. Vivamus consectetur aliquam nunc, nec venenatis libero feugiat quis. Aenean dolor odio, consequat in ornare a, viverra ac diam. Maecenas justo orci, tincidunt vitae porta nec, ullamcorper quis nulla. Curabitur ultricies ligula justo, vitae tincidunt massa fermentum eget. Vivamus porttitor placerat nunc accumsan porta. Suspendisse tempus elit sed nulla vehicula sollicitudin. Curabitur laoreet a nunc sed gravida. Nunc id lorem vitae nulla interdum sodales vitae quis orci. Aenean tincidunt neque eu sapien porta, congue laoreet diam volutpat.</span>
-                    <p><input class="learnmore" type="submit" name="connect" id="connect" value="Learn More &#9654;"></p>   
-                </div>
-                  </div>
-                <div class="genimg2">
-                  <!-- digital image -->
-                        <picture> 
-                          <source srcset="images/pastry_320.jpg, 
-                                          images/pastry_540.jpg 2x,  
-                                          images/pastry_760.jpg 3x" 
-                                  media="(max-width: 760px)" >
-
-                          <source srcset="images/pastry_760.jpg, 
-                                          images/pastry_960.jpg 2x,  
-                                          images/pastry_1280.jpg 3x" 
-                          media="(min-width: 761px)" >
-
-                          <source srcset="images/pastry_1280.jpg, 
-                                          images/pastry_1600.jpg 2x,  
-                                          images/pastry_3840.jpg 3x" 
-                                  media="(min-width: 960px)" >
-                        
-                                  <img src="images/pastry_original.jpg" alt="Picture of various pastries"> 
-                        </picture>
-
-                        
-
-                  </div>
-                </div>
-    </main>
-
-    
-    <div class="backfooter"></div>
-    <div class="footer1">
-<!-- Add social media icons -->
-<div class="social">
-  <h3>Connect with us</h3> 
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-instagram"></a>
-<a href="#" class="fa fa-google"></a>
-</div>
-
-    <div class="hours">
-            <table>
-                <caption><h3>Hours of operation</h3></caption>
-                <thead>
-                  <tr>
-                    <th>Days</th>
-                    <th>Hours</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Monday - Friday</td>
-                    <td>9 AM - 6 PM</td>
-                  </tr>
-                  <tr>
-                    <td>Saturday - Sunday</td>
-                    <td>Closed</td>
-                  </tr>
-                </tbody>
-              </table>
-    </div>
-    <div class="location">
-       <h3>Location</h3> 
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518045395!2d-75.75712548419932!3d45.3499315490813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1637855127682!5m2!1sen!2sca" width="300" height="225" style="border:0;" allowfullscreen=""></iframe>
-    <address>
-        Visit us at: BunBakeryBoutique.com<br>
-        Phone: 1-888-286-2253 or 1-888-BUN-BAKE
-    </address>
-    </div>
-  </div>
-
-    <footer>
-    <!-- added copyright-->
-    <div class="copyrighttext">
-        <p><strong><small>&copy; Copyright Victoria Rodgers 2021. All Rights Reserved</small>.</strong></p>
-        <p><small><sup>*</sup>Note: This webpage was created within the bounds of the course MTM6130_020 at Algonquin College.</small></p>
+          <!-- added images in a box with text -->
+          <div class="text3">
+            <h2>What we offer
+            </h2>  
+            <div class="text2">
+              <!-- added a seperate container just for the text and button in the general container for the content of this segment -->
+              <span class="servicebox">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus rhoncus dui eu convallis. Vivamus consectetur aliquam nunc, nec venenatis libero feugiat quis. Aenean dolor odio, consequat in ornare a, viverra ac diam. Maecenas justo orci, tincidunt vitae porta nec, ullamcorper quis nulla. Curabitur ultricies ligula justo, vitae tincidunt massa fermentum eget. Vivamus porttitor placerat nunc accumsan porta. Suspendisse tempus elit sed nulla vehicula sollicitudin. Curabitur laoreet a nunc sed gravida. Nunc id lorem vitae nulla interdum sodales vitae quis orci. Aenean tincidunt neque eu sapien porta, congue laoreet diam volutpat.
+              </span>
+              <p>
+                <input class="learnmore" type="submit" name="connect" id="connect" value="Learn More &#9654;">
+              </p>   
+            </div>
+          </div>
+          <div class="genimg2">
+            <!-- digital image -->
+            <picture> 
+              <source srcset="images/pastry_320.jpg, 
+                              images/pastry_540.jpg 2x,  
+                              images/pastry_760.jpg 3x" 
+                      media="(max-width: 760px)" >
+              <source srcset="images/pastry_760.jpg, 
+                              images/pastry_960.jpg 2x,  
+                              images/pastry_1280.jpg 3x" 
+                      media="(min-width: 761px)" >
+              <source srcset="images/pastry_1280.jpg, 
+                              images/pastry_1600.jpg 2x,  
+                              images/pastry_3840.jpg 3x" 
+                      media="(min-width: 960px)" >
+              <img src="images/pastry_original.jpg" alt="Picture of various pastries"> 
+            </picture>
+          </div>
         </div>
-    </footer>
-</div>
-</body>
+      </main>
+      <!-- Footer-->
+      <div class="backfooter">
+      </div>
+      <div class="footer1">
+        <!-- Added social media icons -->
+        <div class="social">
+          <h3>Connect with us
+          </h3> 
+          <a href="#" class="fa fa-facebook">
+          </a>
+          <a href="#" class="fa fa-twitter">
+          </a>
+          <a href="#" class="fa fa-instagram">
+          </a>
+          <a href="#" class="fa fa-google">
+          </a>
+        </div>
+        <!-- added a table with hours-->
+        <div class="hours">
+          <table>
+            <caption>
+              <h3>Hours of operation
+              </h3>
+            </caption>
+            <thead>
+              <tr>
+                <th>Days
+                </th>
+                <th>Hours
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday - Friday
+                </td>
+                <td>9 AM - 6 PM
+                </td>
+              </tr>
+              <tr>
+                <td>Saturday - Sunday
+                </td>
+                <td>Closed
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- added the location and map-->
+        <div class="location">
+          <h3>Location
+          </h3> 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518045395!2d-75.75712548419932!3d45.3499315490813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1637855127682!5m2!1sen!2sca" width="300" height="225" style="border:0;" allowfullscreen="">
+          </iframe>
+          <address>
+            Visit us at: BunBakeryBoutique.com
+            <br>
+            Phone: 1-888-286-2253 or 1-888-BUN-BAKE
+          </address>
+        </div>
+      </div>
+      <footer>
+        <!-- added copyright-->
+        <div class="copyrighttext">
+          <p>
+            <strong>
+              <small>&copy; Copyright Victoria Rodgers 2021. All Rights Reserved
+              </small>.
+            </strong>
+          </p>
+          <p>
+            <small>
+              <sup>*
+              </sup>Note: This webpage was created within the bounds of the course MTM6130_020 at Algonquin College.
+            </small>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
 <!-- End of code-->   
